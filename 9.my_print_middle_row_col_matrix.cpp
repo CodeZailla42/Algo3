@@ -26,7 +26,7 @@ void	PrintMatrix(int matrix[3][3], short Rows, short Cols){
 	}
 }
 
-void	PrintRows(int matrix[3][3], short Rows, short Cols){
+void	PrintMiddleRow(int matrix[3][3], short Rows, short Cols){
 	for (short i = 0; i < Rows; i++){
 		for (int j = 0; j < Cols; j++){
 			if (i == 1){
@@ -37,7 +37,7 @@ void	PrintRows(int matrix[3][3], short Rows, short Cols){
 	cout << "\n";
 }
 
-void	PrintCols(int matrix[3][3], short Rows, short Cols){
+void	PrintMiddleCols(int matrix[3][3], short Rows, short Cols){
 	for (short i = 0; i < Rows; i++){
 		for (int j = 0; j < Cols; j++){
 			if (j == 1){
@@ -56,11 +56,11 @@ int main(){
 	cout << "The following is 3x3 matrix:\n";
 	PrintMatrix(matrix, 3, 3);
 
-	cout << "\nPrint Rows:\n";
-	PrintRows(matrix, 3, 3);
+	cout << "\nPrint Middle Row:\n";
+	PrintMiddleRow(matrix, 3, 3);
 
-	cout << "\nPrint Cols:\n";
-	PrintCols(matrix, 3, 3);
+	cout << "\nPrint Middle Cols:\n";
+	PrintMiddleCols(matrix, 3, 3);
 
 	return (0);
 }
