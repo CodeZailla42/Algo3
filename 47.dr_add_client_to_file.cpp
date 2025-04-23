@@ -76,7 +76,7 @@ void	AddClients(){
 		cout << "Adding New Client:\n\n";
 
 		AddNewClient();
-		cout << "\nClient Added Successfully, do you want to add more Client? Y/N?";
+		cout << "\nClient Added Successfully, do you want to add more Client? Y/N? ";
 		cin >> AddMore;
 
 	} while (toupper(AddMore) == 'Y');
